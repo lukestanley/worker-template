@@ -10,6 +10,6 @@ ENV HF_HOME="/runpod-volume/.cache/huggingface/"
 RUN python3.11 -m pip install --upgrade pip && \
     python3.11 -m pip install runpod==1.6.0
 
-ADD handler.py .
+ADD runpod_handler.py .
 
-CMD python3.11 -u /handler.py
+CMD python3.11 -u /runpod_handler.py
